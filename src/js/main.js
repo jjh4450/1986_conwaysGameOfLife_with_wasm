@@ -2,7 +2,6 @@
 import '../scss/styles.scss'
 import { Universe, Cell } from "conway-logic";
 import { memory } from  "conway-logic/conway_logic_bg.wasm";
-import '../assets/preview.png'
 
 const title_render = () => {
     const text = "Conway's Game of Life";
