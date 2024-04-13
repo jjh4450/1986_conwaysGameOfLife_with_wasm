@@ -1,0 +1,19 @@
+{
+  "name": "conway-logic",
+  "collaborators": [
+    "JunHWan Jo (jeje) <jjh4450git@gamil.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "conway_logic_bg.wasm",
+    "conway_logic.js",
+    "conway_logic_bg.js",
+    "conway_logic.d.ts"
+  ],
+  "module": "conway_logic.js",
+  "types": "conway_logic.d.ts",
+  "sideEffects": [
+    "./conway_logic.js",
+    "./snippets/*"
+  ]
+}

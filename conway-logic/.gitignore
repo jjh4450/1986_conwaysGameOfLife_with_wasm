@@ -2,5 +2,5 @@
 **/*.rs.bk
 Cargo.lock
 bin/
-pkg/
+# pkg/ for deployed wasm-pack projects
 wasm-pack.log
