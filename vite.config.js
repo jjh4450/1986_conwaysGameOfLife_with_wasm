@@ -11,7 +11,12 @@ export default defineConfig({
   },
 
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    rollupOptions: {
+      output: {
+        assetFileNames: `assets/[name].[ext]`
+      }
+    }
   },
 
   // resolve: {

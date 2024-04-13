@@ -2,11 +2,12 @@
 import '../scss/styles.scss'
 import { Universe, Cell } from "conway-logic";
 import { memory } from  "conway-logic/conway_logic_bg.wasm";
+import '../assets/preview.png'
 
 const title_render = () => {
     const text = "Conway's Game of Life";
     let i = 0;
-    const speed = 50; // 타이핑 속도(ms)
+    const speed = 150; // 타이핑 속도(ms)
     const typewriterText = document.getElementById('typewriter-text');
 
     function typeWriter() {
