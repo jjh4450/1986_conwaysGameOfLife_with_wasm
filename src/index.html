@@ -1,16 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./favicon.ico">
-    <title>jeje_dos</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life with Rust and WebAssembly</title>
+</head>
+<body>
+  <header>
+    <noscript>This page contains WebAssembly and JavaScript content, please enable JavaScript in your browser.</noscript>
+    <div class="typewriter">
+      <h1 id="typewriter-text"></h1>
     </div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+  </header>
+  <section>
+    <p>Implemented with Rust and WebAssembly</p>
+    <!-- <p>Please run <code>wasm-pack build</code> first to generate the necessary WASM file.</p> -->
+    <canvas id="game-of-life-canvas"></canvas>
+  </section>
+  <footer>
+    <p>&copy; 2024 Conway's Game of Life Project by jjh4450. All rights reserved.</p>
+    <p>Visit our <a href="https://github.com/your-github-repository">GitHub repository</a> to view the source code or contribute.</p>
+    <p>Need help? Contact us at <a href="mailto:jjh4450git@gmail.com">jjh4450git@gmail.com</a>.</p>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
 </html>

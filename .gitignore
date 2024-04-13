@@ -1,3 +1,4 @@
 ./bootstrap/*
 *.map
 node_modules
+dist
