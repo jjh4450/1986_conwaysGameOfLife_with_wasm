@@ -1,4 +1,4 @@
-# 1988 Conway's Game of Life with WebAssembly
+# 1986 Conway's Game of Life with WebAssembly
 
 This project is an implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), a cellular automaton devised by the British mathematician John Horton Conway in 1970. The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input.
 
@@ -6,7 +6,7 @@ This project is an implementation of [Conway's Game of Life](https://en.wikipedi
 
 - Implemented in Rust for performance and safety.
 - Compiled to WebAssembly for running in the browser at near-native speed.
-- Retro 1988-style pixel-art interface and typography for a throwback feel.
+- Retro 1986-style pixel-art interface and typography for a throwback feel.
 
 ## Getting Started
 
@@ -22,11 +22,11 @@ To build and run this game locally, you will need:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/jjh4450/1988_conwaysGameOfLife_with_wasm.git
+   git clone https://github.com/jjh4450/1986_conwaysGameOfLife_with_wasm.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd 1988_conwaysGameOfLife_with_wasm
+   cd 1986_conwaysGameOfLife_with_wasm
    ```
 3. Build the WebAssembly module:
    ```sh
