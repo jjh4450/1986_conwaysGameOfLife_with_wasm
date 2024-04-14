@@ -1,89 +1,110 @@
 :root {
-    --bs-blue: #0000aa;
-    --bs-gray: #555555;
-    --bs-white: #fff;
-    --bs-yellow: #ffff55;
-    --bs-dark: #000;
-    --bs-primary-text: #ffff55;
+  --bs-blue: #0000aa;
+  --bs-gray: #555555;
+  --bs-white: #fff;
+  --bs-yellow: #ffff55;
+  --bs-dark: #000;
+  --bs-primary-text: #ffff55;
+  --x-pos: 0px;
+  --y-pos: 0px;
+}
+
+@font-face {
+  font-family: 'pxdos';
+  src: url('../fonts/Px437_IBM_EGA8.otf');
+  font-display: swap;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  @font-face {
-    font-family: 'pxdos';
-    src: url('../fonts/Px437_IBM_EGA8.otf');
-    font-display: swap;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  @keyframes blink-caret {
-    50% { opacity: 0; }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
+}
+
+@keyframes randomFloatAndRotate {
+  0% { transform: otate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'pxdos', monospace;
+  width: 100vw;
+  margin: 0;
+  padding-top: 5vh;
+  background-color: var(--bs-blue);
+  color: var(--bs-white);
+  text-align: center;
+  animation: fadeIn 2s ease-out forwards;
+  overflow: hidden;
+
+  .typewriter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.1em;
+
+    h1 {
+      flex-grow: 1;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      width: 90vw;
+      color: var(--bs-primary-text);
+
+      &::after {
+        content: '_';
+        animation: blink-caret 0.75s step-end infinite;
+      }
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
-  
-  body {
+
+  section, canvas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'pxdos', monospace;
-    width: 100vw;
-    margin: 0;
-    padding-top: 5vh;
-    background-color: var(--bs-blue);
-    color: var(--bs-white);
-    text-align: center;
-    animation: fadeIn 2s ease-out forwards;
-  
-    .typewriter {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 0.1em;
-  
-      h1 {
-        flex-grow: 1;
-        position: relative;
-        overflow: hidden;
-        margin: 0 auto;
-        letter-spacing: 0.15em;
-        width: 90vw;
-        color: var(--bs-primary-text);
-  
-        &::after {
-          content: '_';
-          animation: blink-caret 0.75s step-end infinite;
-        }
-      }
-    }
-  
-    section, canvas {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    canvas {
-      border: 2px solid var(--bs-white);
-      margin-top: 20px;
-    }
   }
-  
-  p, code {
-    width: 90vw;
-    color: var(--bs-gray);
+
+  canvas {
+    border: 2px solid var(--bs-white);
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    // z-index: 1;
   }
-  
+}
+
+p, code {
+  width: 90vw;
+  color: var(--bs-gray);
+}
+
+iframe {
+  position: absolute; /* 절대 위치 설정 */
+  width: 100px; /* iframe 너비 */
+  height: 100px; /* iframe 높이 */
+  border: none; /* 테두리 제거 */
+  top: var(--y-pos, 0px); /* 초기값으로 0px 설정 */
+  left: var(--x-pos, 0px); /* 초기값으로 0px 설정 */
+  transition: top 4s ease-out, left 3s ease-out;
+  animation: randomFloatAndRotate 4s linear infinite;
+  z-index: 1;
+}
