@@ -42,7 +42,7 @@ To build and run this game locally, you will need:
 To launch the game, use the following command from the project directory:
 
 ```sh
-npm run start
+npm run dev
 ```
 
 This will start a local server, and you can play the game by navigating to `http://localhost:8080` in your web browser.
@@ -53,12 +53,8 @@ Contributions to improve Conway's Game of Life are welcome. Please feel free to 
 
 ## License
 
-This project is licensed under both the MIT License and the Apache License 2.0 - see the [LICENSE_MIT](LICENSE_MIT) and [LICENSE_APACHE](LICENSE_APACHE) files for details.
+This project is licensed under the MIT License - see the [LICENSE_MIT](LICENSE_MIT)
 
 ## Help and Support
 
-If you have any questions or need assistance, please contact us at [jjh4450git@gmail.com](mailto:jjh4450git@gmail.com).
-
----
-
-This README should be adjusted according to the actual links and details of the project. Make sure to replace placeholder URLs with the actual ones where necessary.
+If you have any questions or need assistance, please contact us at [jjh4450git@gmail.com](mailto:jjh4450git@gmail.com)
