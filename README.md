@@ -53,7 +53,7 @@ Contributions to improve Conway's Game of Life are welcome. Please feel free to 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE_MIT](LICENSE_MIT)
+This project is licensed under the MIT License - see the [LICENSE_MIT](./LICENSE)
 
 ## Help and Support
 
